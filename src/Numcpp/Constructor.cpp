@@ -13,7 +13,7 @@
 
 Numcpp::Numcpp()
 {
-
+    
 }
 Numcpp::~Numcpp()
 {
