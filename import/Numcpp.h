@@ -79,6 +79,67 @@ class Numcpp
         /// \return In the vector True if the class list 1D is inferior, False if not
         std::vector<bool> isInferior(std::vector<float> list);
 
+        /// Create a boolean vector
+        /// \param list vector test with the class list 2D
+        /// \return In the vector True if the class list 2D is inferior, False if not
+        std::vector<std::vector<bool>> isInferior(std::vector<std::vector<float>> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 3D
+        /// \return In the vector True if the class list 3D is inferior, False if not
+        std::vector<std::vector<std::vector<bool>>> isInferior(std::vector<std::vector<std::vector<float>>> list);
+
+        ////////////////////////////////////////
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 1D
+        /// \return In the vector True if the class list 1D is inferior or equal, False if not
+        std::vector<bool> isInferiorOrEqual(std::vector<float> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 2D
+        /// \return In the vector True if the class list 2D is inferior or equal, False if not
+        std::vector<std::vector<bool>> isInferiorOrEqual(std::vector<std::vector<float>> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 3D
+        /// \return In the vector True if the class list 3D is inferior or equal, False if not
+        std::vector<std::vector<std::vector<bool>>> isInferiorOrEqual(std::vector<std::vector<std::vector<float>>> list);
+
+        ////////////////////////////////////////
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 1D
+        /// \return In the vector True if the class list 1D is superior or equal, False if not
+        std::vector<bool> isSuperiorOrEqual(std::vector<float> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 2D
+        /// \return In the vector True if the class list 2D is superior or equal, False if not
+        std::vector<std::vector<bool>> isSuperiorOrEqual(std::vector<std::vector<float>> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 3D
+        /// \return In the vector True if the class list 3D is superior or equal, False if not
+        std::vector<std::vector<std::vector<bool>>> isSuperiorOrEqual(std::vector<std::vector<std::vector<float>>> list);
+
+        ////////////////////////////////////////
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 1D
+        /// \return In the vector True if the class list 1D is superior, False if not
+        std::vector<bool> isSuperior(std::vector<float> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 2D
+        /// \return In the vector True if the class list 2D is superior, False if not
+        std::vector<std::vector<bool>> isSuperior(std::vector<std::vector<float>> list);
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 3D
+        /// \return In the vector True if the class list 3D is superior, False if not
+        std::vector<std::vector<std::vector<bool>>> isSuperior(std::vector<std::vector<std::vector<float>>> list);
+
         ////////////////////////////////////////
         
         /// Found the minimal value in the class list 1D
