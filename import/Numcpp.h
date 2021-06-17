@@ -15,6 +15,7 @@
 #include <iostream>
 #include <vector>
 
+/// Library limited to 3D list
 class Numcpp
 {
     private:
@@ -62,6 +63,72 @@ class Numcpp
 
         ////////////////////////////////////////
 
+        /// Create a boolean vector 
+        /// \param list vector test with the class list 1D
+        /// \return In the vector True if they are equal, False if not
+        std::vector<bool> isEqual(std::vector<float> list);
+
+        /// Create a boolean vector 
+        /// \param list vector test with the class list 2D
+        /// \return In the vector True if they are equal, False if not
+        std::vector<std::vector<bool>> isEqual(std::vector<std::vector<float>> list);
+
+        /// Create a boolean vector 
+        /// \param list vector test with the class list 3D
+        /// \return In the vector True if they are equal, False if not
+        std::vector<std::vector<std::vector<bool>>> isEqual(std::vector<std::vector<std::vector<float>>> list);
+
+        ////////////////////////////////////////
+
+        /// Create a boolean vector
+        /// \param list vector test with the class list 1D
+        /// \return In the vector True if the class list 1D is inferior, False if not
+        std::vector<bool> isInferior(std::vector<float> list);
+
+        ////////////////////////////////////////
+        
+        /// Found the minimal value in the class list 1D
+        /// \return The minimal value floatant
+        float min1D(void);
+
+        /// Found the minimal value in the class list 2D
+        /// \return The minimal value floatant
+        float min2D(void);
+
+        /// Found the minimal value in the class list 3D
+        /// \return The minimal value floatant
+        float min3D(void);
+
+        ////////////////////////////////////////
+        
+        /// Found the maximal value in the class list 1D
+        /// \return The maximal value floatant
+        float max1D(void);
+
+        /// Found the maximal value in the class list 2D
+        /// \return The maximal value floatant
+        float max2D(void);
+
+        /// Found the maximal value in the class list 3D
+        /// \return The maximal value floatant
+        float max3D(void);
+
+        ////////////////////////////////////////
+
+        /// Organize the list 1D from smallest to largest 
+        /// \return The vector organize
+        std::vector<float> sort1D(void);
+
+        /// Organize the list 2D from smallest to largest 
+        /// \return The vector organize
+        std::vector<std::vector<float>> sort2D(void);
+
+        /// Organize the list 2D from smallest to largest 
+        /// \return The vector organize
+        std::vector<std::vector<std::vector<float>>> sort3D(void);
+
+        ////////////////////////////////////////
+
         /// Create a list of vector : 1D
         /// \param x number of line
         void listZero1D(unsigned int x = 1);
@@ -79,48 +146,45 @@ class Numcpp
 
         ////////////////////////////////////////
 
-        /// Sum of an enter list 1D and the class list 1D, both list need the same size
+        /// Sum an enter list 1D and the class list 1D, both list need the same size
         /// \param list1D The list to additional to the class list 1D
         void sum1D(std::vector<float> list1D);
 
-        /// Sum of an enter list 2D and the class list 2D, both list need the same size
+        /// Sum an enter list 2D and the class list 2D, both list need the same size
         /// \param list2D The list to additional to the class list 2D
         void sum2D(std::vector<std::vector<float>> list2D);
 
-        /// Sum of an enter list 3D and the class list 3D, both list need the same size
+        /// Sum an enter list 3D and the class list 3D, both list need the same size
         /// \param list3D The list to additional to the class list 3D
         void sum3D(std::vector<std::vector<std::vector<float>>> list3D);
 
         ////////////////////////////////////////
 
-        /// Substraction of an enter list 1D and the class list 1D, both list need the same size
+        /// Substraction an enter list 1D and the class list 1D, both list need the same size
         /// \param list1D The list to substract to the class list 1D
         void sub1D(std::vector<float> list1D);
 
-        /// Substraction of an enter list 2D and the class list 2D, both list need the same size
+        /// Substraction an enter list 2D and the class list 2D, both list need the same size
         /// \param list2D The list to substract to the class list 2D
         void sub2D(std::vector<std::vector<float>> list2D);
 
-        /// Substraction of an enter list 3D and the class list 3D, both list need the same size
+        /// Substraction an enter list 3D and the class list 3D, both list need the same size
         /// \param list3D The list to substract to the class list 3D
         void sub3D(std::vector<std::vector<std::vector<float>>> list3D);
 
         ////////////////////////////////////////
 
-        /// Print in the Terminal a 1D list
-        /// \param flux cout flux for printing
-        /// \param list1D 1D list
-        void printlist1D(std::ostream &flux, std::vector<float> list1D);
+        /// Multiply an enter list 1D and the class list 1D, both list need the same size
+        /// \param list1D The list to multiply to the class list 1D
+        void mult1D(std::vector<float> list1D);
 
-        /// Print in the Terminal a 2D list
-        /// \param flux cout flux for printing
-        /// \param list2D 2D list
-        void printlist2D(std::ostream &flux, std::vector<std::vector<float>> list2D);
+        /// Multiply an enter list 2D and the class list 2D, both list need the same size
+        /// \param list2D The list to multiply to the class list 2D
+        void mult2D(std::vector<std::vector<float>> list2D);
 
-        /// Print in the Terminal a 3D list
-        /// \param flux cout flux for printing
-        /// \param list3D 3D list
-        void printlist3D(std::ostream &flux, std::vector<std::vector<std::vector<float>>> list3D);
+        /// Multiply an enter list 3D and the class list 3D, both list need the same size
+        /// \param list3D The list to multiply to the class list 3D
+        void mult3D(std::vector<std::vector<std::vector<float>>> list3D);
 };
 
 #endif

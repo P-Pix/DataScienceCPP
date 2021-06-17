@@ -4,9 +4,12 @@ SRC		=	main.cpp\
 			src/Numcpp/Constructor.cpp\
 			src/Numcpp/PublicListSum.cpp\
 			src/Numcpp/PublicListZero.cpp\
-			src/Numcpp/PublicPrinting.cpp\
+			src/Numcpp/Test.cpp\
 
 FILE	=	main.o
 
 cpp:
 	@(g++ -o $(FILE) $(SRC))
+
+val:
+	@(valgrind g++ -o $(FILE) $(SRC))
