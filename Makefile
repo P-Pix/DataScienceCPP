@@ -1,9 +1,11 @@
-NAME	=	main
-
-SRC		=	src/Numcpp/Constructor.cpp\
+SRC		=	main.cpp\
+			\
 			src/Numcpp/Accessor.cpp\
+			src/Numcpp/Constructor.cpp\
+			src/Numcpp/PublicArray.cpp\
+			src/Numcpp/PublicPrinting.cpp\
 
 FILE	=	main.o
 
 cpp:
-	@(g++ -o $(FILE) $(NAME) $(SRC))
+	@(g++ -o $(FILE) $(SRC))

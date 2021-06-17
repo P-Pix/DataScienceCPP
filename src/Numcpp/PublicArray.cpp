@@ -11,7 +11,7 @@
 
 #include "../../import/Numcpp.h"
 
-void Numcpp::array1D(float x)
+void Numcpp::arrayZero1D(float x)
 {
     m_array1D.clear();
     for(int i = 0; i < x; i ++)
@@ -20,7 +20,7 @@ void Numcpp::array1D(float x)
     }
 }
 
-void Numcpp::array2D(float x, float y)
+void Numcpp::arrayZero2D(float x, float y)
 {
     m_array2D.clear();
     for(int j = 0; j < y; j ++)
@@ -35,7 +35,7 @@ void Numcpp::array2D(float x, float y)
     }
 }
 
-void Numcpp::array3D(float x, float y, float z)
+void Numcpp::arrayZero3D(float x, float y, float z)
 {
     m_array3D.clear();
     for(int k = 0; k < z; k ++)
