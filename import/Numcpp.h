@@ -179,6 +179,20 @@ class Numcpp
         /// Multiply an enter list 3D and the class list 3D, both list need the same size
         /// \param list3D The list to multiply to the class list 3D
         void mult3D(std::vector<std::vector<std::vector<float>>> list3D);
+
+        ////////////////////////////////////////
+
+        /// Split an enter list 1D and the class list 1D, both list need the same size
+        /// \param list1D The list to split to the class list 1D
+        void split1D(std::vector<float> list1D);
+
+        /// Split an enter list 2D and the class list 2D, both list need the same size
+        /// \param list2D The list to split to the class list 2D
+        void split2D(std::vector<std::vector<float>> list2D);
+
+        /// Split an enter list 3D and the class list 3D, both list need the same size
+        /// \param list3D The list to split to the class list 3D
+        void split3D(std::vector<std::vector<std::vector<float>>> list3D);
 };
 
 #endif
