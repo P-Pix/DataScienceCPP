@@ -15,7 +15,7 @@
 int main()
 {
     Numcpp Numcpp;
-    Numcpp.arrayZero2D(4, 4);
-    std::cout << Numcpp.getArray2D() << std::endl;
+    Numcpp.listZero3D(10, 10, 3);
+    std::cout << Numcpp.getlist3D() << std::endl;
     return 0;
 }

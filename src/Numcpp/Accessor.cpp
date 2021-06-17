@@ -11,15 +11,15 @@
 
 #include "../../import/Numcpp.h"
 
-std::vector<float> Numcpp::getArray1D()
+std::vector<float> Numcpp::getlist1D()
 {
-    return m_array1D;
+    return m_list1D;
 }
-std::vector<std::vector<float>> Numcpp::getArray2D()
+std::vector<std::vector<float>> Numcpp::getlist2D()
 {
-    return m_array2D;
+    return m_list2D;
 }
-std::vector<std::vector<std::vector<float>>> Numcpp::getArray3D()
+std::vector<std::vector<std::vector<float>>> Numcpp::getlist3D()
 {
-    return m_array3D;
+    return m_list3D;
 }

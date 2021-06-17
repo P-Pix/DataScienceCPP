@@ -13,12 +13,12 @@
 
 std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
 {
-    flux << std::endl << "########## 3D Array ##########" << std::endl << std::endl;
-    Numcpp.printArray3D(flux, Numcpp.getArray3D());
-    flux << std::endl << "########## 2D Array ##########" << std::endl << std::endl;
-    Numcpp.printArray2D(flux, Numcpp.getArray2D());
-    flux << std::endl << "########## 1D Array ##########" << std::endl << std::endl;
-    Numcpp.printArray1D(flux, Numcpp.getArray1D());
+    flux << std::endl << "########## 3D list ##########" << std::endl << std::endl;
+    Numcpp.printlist3D(flux, Numcpp.getlist3D());
+    flux << std::endl << "########## 2D list ##########" << std::endl << std::endl;
+    Numcpp.printlist2D(flux, Numcpp.getlist2D());
+    flux << std::endl << "########## 1D list ##########" << std::endl << std::endl;
+    Numcpp.printlist1D(flux, Numcpp.getlist1D());
     return flux;
 }
 

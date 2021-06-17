@@ -1,5 +1,5 @@
 /**
- * @file PublicArray.cpp
+ * @file Publiclist.cpp
  * @author Guillaume LEMONNIER
  * @brief 
  * @version 0.1
@@ -11,18 +11,18 @@
 
 #include "../../import/Numcpp.h"
 
-void Numcpp::arrayZero1D(float x)
+void Numcpp::listZero1D(unsigned int x)
 {
-    m_array1D.clear();
+    m_list1D.clear();
     for(int i = 0; i < x; i ++)
     {
-        m_array1D.push_back(0);
+        m_list1D.push_back(0);
     }
 }
 
-void Numcpp::arrayZero2D(float x, float y)
+void Numcpp::listZero2D(unsigned int x, unsigned int y)
 {
-    m_array2D.clear();
+    m_list2D.clear();
     for(int j = 0; j < y; j ++)
     {
         std::vector<float> vector1D;
@@ -31,13 +31,13 @@ void Numcpp::arrayZero2D(float x, float y)
         {
             vector1D.push_back(0);
         }
-        m_array2D.push_back(vector1D);
+        m_list2D.push_back(vector1D);
     }
 }
 
-void Numcpp::arrayZero3D(float x, float y, float z)
+void Numcpp::listZero3D(unsigned int x, unsigned int y, unsigned int z)
 {
-    m_array3D.clear();
+    m_list3D.clear();
     for(int k = 0; k < z; k ++)
     {
         std::vector<std::vector<float>> vector2D;
@@ -52,6 +52,6 @@ void Numcpp::arrayZero3D(float x, float y, float z)
             }
             vector2D.push_back(vector1D);
         }
-        m_array3D.push_back(vector2D);
+        m_list3D.push_back(vector2D);
     }
 }
