@@ -30,12 +30,6 @@ class Numcpp
         /// List 3D
         std::vector<std::vector<std::vector<float>>> m_list3D;
 
-        ////////////////////////////////////////
-
-        /// Print in the Terminal all element in the list
-        /// \param flux The flux of ostream
-        void printList1D(std::ostream &flux);
-
     protected:
 
     public:
