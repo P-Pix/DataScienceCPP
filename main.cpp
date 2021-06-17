@@ -10,7 +10,7 @@
  */
 
 #include "import/Numcpp.h"
-#include "operator.cpp"
+#include "src/operator.cpp"
 
 int main()
 {

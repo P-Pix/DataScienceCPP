@@ -9,7 +9,7 @@
  * 
  */
 
-#include "import/Numcpp.h"
+#include "../import/Numcpp.h"
 
 std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
 {
