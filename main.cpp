@@ -10,6 +10,8 @@
  */
 
 #include "import/Numcpp.h"
+#include "import/Pltcpp.h"
+
 #include "src/operator<<.cpp"
 
 using namespace std;

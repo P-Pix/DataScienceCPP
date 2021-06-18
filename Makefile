@@ -14,6 +14,13 @@ SRC		=	main.cpp\
 			src/Numcpp/SuperiorOrEqual.cpp\
 			src/Numcpp/Zero.cpp\
 			\
+			src/Pltcpp/Accessor.cpp\
+			src/Pltcpp/Constructor.cpp\
+			src/Pltcpp/Control.cpp\
+			src/Pltcpp/Coord2D.cpp\
+			src/Pltcpp/Draw.cpp\
+			src/Pltcpp/Line.cpp\
+			\
 
 FILE	=	main.o
 
