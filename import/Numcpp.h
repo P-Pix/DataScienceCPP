@@ -30,6 +30,23 @@ class Numcpp
         /// List 3D
         std::vector<std::vector<std::vector<float>>> m_list3D;
 
+        ////////////////////////////////////////
+
+        /// Sum relative 1D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        std::vector<float> sum1D(std::vector<float> list1, std::vector<float> list2);
+
+        /// Sum relative 2D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        std::vector<std::vector<float>> sum2D(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
+
+        /// Sum relative 3D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        std::vector<std::vector<std::vector<float>>> sum3D(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
+
     protected:
 
     public:
