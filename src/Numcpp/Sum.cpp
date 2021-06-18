@@ -11,7 +11,7 @@
 
 #include "../../import/Numcpp.h"
 
-std::vector<float> Numcpp::sum1D(std::vector<float> list1, std::vector<float> list2)
+std::vector<float> Numcpp::sum(std::vector<float> list1, std::vector<float> list2)
 {
     if(list1.size() != list2.size())
     {
@@ -23,7 +23,7 @@ std::vector<float> Numcpp::sum1D(std::vector<float> list1, std::vector<float> li
     }
     return list1;
 }
-std::vector<std::vector<float>> Numcpp::sum2D(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2)
+std::vector<std::vector<float>> Numcpp::sum(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2)
 {
     if(list1.size() != list2.size())
     {
@@ -31,11 +31,11 @@ std::vector<std::vector<float>> Numcpp::sum2D(std::vector<std::vector<float>> li
     }
     for(int j = 0; j < list1.size(); j ++)
     {
-        list1[j] = sum1D(list1[j], list2[j]);
+        list1[j] = sum(list1[j], list2[j]);
     }
     return list1;
 }
-std::vector<std::vector<std::vector<float>>> Numcpp::sum3D(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2)
+std::vector<std::vector<std::vector<float>>> Numcpp::sum(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2)
 {
     if(list1.size() != list2.size())
     {
@@ -43,22 +43,22 @@ std::vector<std::vector<std::vector<float>>> Numcpp::sum3D(std::vector<std::vect
     }
     for(int k = 0; k < list1.size(); k ++)
     {
-        list1[k] = sum2D(list1[k], list2[k]);
+        list1[k] = sum(list1[k], list2[k]);
     }
     return list1;
 }
 
 ////////////////////////////////////////
 
-void Numcpp::sum1D(std::vector<float> list1D)
+void Numcpp::sum(std::vector<float> list)
 {
-    m_list1D = sum1D(m_list1D, list1D);
+    m_list1D = sum(m_list1D, list);
 }
-void Numcpp::sum2D(std::vector<std::vector<float>> list2D)
+void Numcpp::sum(std::vector<std::vector<float>> list)
 {
-    m_list2D = sum2D(m_list2D, list2D);
+    m_list2D = sum(m_list2D, list);
 }
-void Numcpp::sum3D(std::vector<std::vector<std::vector<float>>> list3D)
+void Numcpp::sum(std::vector<std::vector<std::vector<float>>> list)
 {
-    m_list3D = sum3D(m_list3D, list3D);
+    m_list3D = sum(m_list3D, list);
 }

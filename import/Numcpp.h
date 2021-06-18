@@ -177,19 +177,39 @@ class Numcpp
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<float> sum1D(vector<float> list1, vector<float> list2);
+        vector<float> sum(vector<float> list1, vector<float> list2);
 
         /// Relative sum 2D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<float>> sum2D(vector<vector<float>> list1, vector<vector<float>> list2);
+        vector<vector<float>> sum(vector<vector<float>> list1, vector<vector<float>> list2);
 
         /// Relative sum 3D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<vector<float>>> sum3D(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        vector<vector<vector<float>>> sum(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+
+        ////////////////////////////////////////
+
+        /// Relative sub 1D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        /// \return vector with the result
+        vector<float> sub(vector<float> list1, vector<float> list2);
+
+        /// Relative sub 2D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        /// \return vector with the result
+        vector<vector<float>> sub(vector<vector<float>> list1, vector<vector<float>> list2);
+
+        /// Relative sub 3D
+        /// \param list1 list who receve the result
+        /// \param list2 list who send the value
+        /// \return vector with the result
+        vector<vector<vector<float>>> sub(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
 
     protected:
 
@@ -197,6 +217,7 @@ class Numcpp
         ////////////////////////////////////////
 
         /// Default constructor
+        /// Create a 1D, 2D, 3D list with only one element : 0
         Numcpp(void);
 
         /// Default destructor
@@ -363,47 +384,47 @@ class Numcpp
         ////////////////////////////////////////
 
         /// Sum an enter list 1D and the class list 1D, both list need the same size
-        /// \param list1D The list to additional to the class list 1D
-        void sum1D(vector<float> list1D);
+        /// \param list The list to additional to the class list 1D
+        void sum(vector<float> list);
 
         /// Sum an enter list 2D and the class list 2D, both list need the same size
-        /// \param list2D The list to additional to the class list 2D
-        void sum2D(vector<vector<float>> list2D);
+        /// \param list The list to additional to the class list 2D
+        void sum(vector<vector<float>> list);
 
         /// Sum an enter list 3D and the class list 3D, both list need the same size
-        /// \param list3D The list to additional to the class list 3D
-        void sum3D(vector<vector<vector<float>>> list3D);
+        /// \param list The list to additional to the class list 3D
+        void sum(vector<vector<vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Substraction an enter list 1D and the class list 1D, both list need the same size
-        /// \param list1D The list to substract to the class list 1D
-        void sub1D(vector<float> list1D);
+        /// \param list The list to substract to the class list 1D
+        void sub(vector<float> list);
 
         /// Substraction an enter list 2D and the class list 2D, both list need the same size
-        /// \param list2D The list to substract to the class list 2D
-        void sub2D(vector<vector<float>> list2D);
+        /// \param list The list to substract to the class list 2D
+        void sub(vector<vector<float>> list);
 
         /// Substraction an enter list 3D and the class list 3D, both list need the same size
         /// \param list3D The list to substract to the class list 3D
-        void sub3D(vector<vector<vector<float>>> list3D);
+        void sub(vector<vector<vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Multiply an enter list 1D and the class list 1D (the two list need just one value)
-        /// \param list1D The list to multiply to the class list 1D
+        /// \param list The list to multiply to the class list 1D
         /// \return vector 1D with one value
-        vector<float> mult1D(vector<float> list1D);
+        vector<float> mult(vector<float> list);
 
         /// Multiply an enter list 2D and the class list 2D
-        /// \param list2D The list to multiply to the class list 2D
+        /// \param list The list to multiply to the class list 2D
         /// \return vector 2D with one value
-        vector<vector<float>> mult2D(vector<vector<float>> list2D);
+        vector<vector<float>> mult(vector<vector<float>> list);
 
         /// Multiply an enter list 3D and the class list 3D
-        /// \param list3D The list to multiply to the class list 3D
+        /// \param list The list to multiply to the class list 3D
         /// \return vector 3D with one value
-        vector<vector<vector<float>>> mult3D(vector<vector<vector<float>>> list3D);
+        vector<vector<vector<float>>> mult(vector<vector<vector<float>>> list);
 };
 
 #endif

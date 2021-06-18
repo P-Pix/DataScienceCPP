@@ -7,6 +7,8 @@ SRC		=	main.cpp\
 			src/Numcpp/InferiorOrEqual.cpp\
 			src/Numcpp/Max.cpp\
 			src/Numcpp/Min.cpp\
+			src/Numcpp/Mult.cpp\
+			src/Numcpp/Sub.cpp\
 			src/Numcpp/Sum.cpp\
 			src/Numcpp/Superior.cpp\
 			src/Numcpp/SuperiorOrEqual.cpp\

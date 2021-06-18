@@ -23,7 +23,7 @@ int main()
     vector<float> vect;
     vect.push_back(8);
     vect.push_back(16);
-    Numcpp.sum1D(vect);
+    Numcpp.sum(vect);
     vect[1] = 1;
 
     cout << Numcpp << endl;

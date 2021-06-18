@@ -11,13 +11,14 @@
 
 #include "../../import/Numcpp.h"
 
-std::vector<float> Numcpp::mult1D(std::vector<float> list)
+std::vector<float> Numcpp::mult(std::vector<float> list)
 {
     std::vector<float> vect;
     vect.push_back(m_list1D[0] * list[0]);
     return vect;
 }
-std::vector<std::vector<float>> Numcpp::mult2D(std::vector<std::vector<float>> list)
+std::vector<std::vector<float>> Numcpp::mult(std::vector<std::vector<float>> list)
 {
-    
+    std::vector<std::vector<float>> vect;
+    return vect;
 }
