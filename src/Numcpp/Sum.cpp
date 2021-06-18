@@ -47,3 +47,18 @@ std::vector<std::vector<std::vector<float>>> Numcpp::sum3D(std::vector<std::vect
     }
     return list1;
 }
+
+////////////////////////////////////////
+
+void Numcpp::sum1D(std::vector<float> list1D)
+{
+    m_list1D = sum1D(m_list1D, list1D);
+}
+void Numcpp::sum2D(std::vector<std::vector<float>> list2D)
+{
+    m_list2D = sum2D(m_list2D, list2D);
+}
+void Numcpp::sum3D(std::vector<std::vector<std::vector<float>>> list3D)
+{
+    m_list3D = sum3D(m_list3D, list3D);
+}

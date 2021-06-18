@@ -13,7 +13,7 @@
 
 Numcpp::Numcpp()
 {
-    
+    //m_pointervectbool.push_back(&isEqual(list1, list2));
 }
 Numcpp::~Numcpp()
 {

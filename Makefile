@@ -2,10 +2,10 @@ SRC		=	main.cpp\
 			\
 			src/Numcpp/Accessor.cpp\
 			src/Numcpp/Constructor.cpp\
-			src/Numcpp/PrivateListSum.cpp\
-			src/Numcpp/PublicListSum.cpp\
-			src/Numcpp/PublicListZero.cpp\
-			src/Numcpp/Test.cpp\
+			src/Numcpp/IsEqual.cpp\
+			src/Numcpp/Sum.cpp\
+			src/Numcpp/Zero.cpp\
+			\
 
 FILE	=	main.o
 

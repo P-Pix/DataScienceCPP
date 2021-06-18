@@ -13,17 +13,19 @@
 #include "src/operator<<.cpp"
 #include "src/operator==.cpp"
 
+using namespace std;
+
 int main()
 {
     Numcpp  Numcpp;
     Numcpp.listZero3D(10, 10, 3);
     Numcpp.listZero2D(5, 5);
     Numcpp.listZero1D(2);
-    std::vector<float> vect;
+    vector<float> vect;
     vect.push_back(8);
     vect.push_back(16);
-    Numcpp.sum1D(vect);
+    cout << Numcpp.isEqual(vect) << endl;
     
-    std::cout << Numcpp << std::endl;
+    cout << Numcpp << endl;
     return 0;
 }
