@@ -18,7 +18,8 @@ using namespace std;
 
 int main()
 {
-    Numcpp  Numcpp;
+    Numcpp Numcpp;
+    Pltcpp Window;
     Numcpp.listZero3D(5, 5, 3);
     Numcpp.listZero2D(3, 3);
     Numcpp.listZero1D(2);
@@ -33,5 +34,11 @@ int main()
     cout << Numcpp.isEqual(vect) << endl;
 
     cout << Numcpp.min1D() << endl;
+
+    while(Window.isOpen())
+    {
+        Window.pollEvent();
+        Window.updateScreen();
+    }
     return 0;
 }

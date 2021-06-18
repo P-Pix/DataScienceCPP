@@ -1,3 +1,7 @@
+MODULE	=	-lsfml-window\
+			-lsfml-system\
+			-lsfml-graphics\
+
 SRC		=	main.cpp\
 			\
 			src/Numcpp/Accessor.cpp\
@@ -25,7 +29,7 @@ SRC		=	main.cpp\
 FILE	=	main.o
 
 cpp:
-	@(g++ -o $(FILE) $(SRC))
+	@(g++ -o $(FILE) $(SRC) $(MODULE))
 
 val:
-	@(valgrind g++ -o $(FILE) $(SRC))
+	@(valgrind g++ -o $(FILE) $(SRC) $(MODULE))
