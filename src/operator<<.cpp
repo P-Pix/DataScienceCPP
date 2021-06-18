@@ -11,6 +11,7 @@
 
 #include "../import/Numcpp.h"
 
+/// Print 1D list floatant
 std::ostream &operator<<(std::ostream &flux, std::vector<float> list)
 {
     flux << "[";
@@ -21,6 +22,8 @@ std::ostream &operator<<(std::ostream &flux, std::vector<float> list)
     flux << "]" << std::endl;
     return flux;
 }
+
+/// Print 2D list floatant
 std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<float>> list)
 {
     for(int y = 0; y < list.size(); y ++)
@@ -29,6 +32,8 @@ std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<float>> lis
     }
     return flux;
 }
+
+/// Print 3D list floatant
 std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<std::vector<float>>> list)
 {
     for(int z = 0; z < list.size(); z ++)
@@ -39,16 +44,9 @@ std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<std::vector
     return flux;
 }
 
-std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
-{
-    flux << std::endl << "########## 3D list ##########" << std::endl << std::endl;
-    flux << Numcpp.getlist3D();
-    flux << std::endl << "########## 2D list ##########" << std::endl << std::endl;
-    flux << Numcpp.getlist2D();
-    flux << std::endl << "########## 1D list ##########" << std::endl << std::endl;
-    flux << Numcpp.getlist1D();
-    return flux;
-}
+///////////////////////////////////////
+
+/// Print 1D list boolean
 std::ostream &operator<<(std::ostream &flux, std::vector<bool> list)
 {
     flux << "[";
@@ -64,5 +62,19 @@ std::ostream &operator<<(std::ostream &flux, std::vector<bool> list)
         }
     }
     flux << "]" << std::endl;
+    return flux;
+}
+
+///////////////////////////////////////
+
+/// Print 1D, 2D, 3D list in the Numcpp
+std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
+{
+    flux << std::endl << "########## 3D list ##########" << std::endl << std::endl;
+    flux << Numcpp.getlist3D();
+    flux << std::endl << "########## 2D list ##########" << std::endl << std::endl;
+    flux << Numcpp.getlist2D();
+    flux << std::endl << "########## 1D list ##########" << std::endl << std::endl;
+    flux << Numcpp.getlist1D();
     return flux;
 }

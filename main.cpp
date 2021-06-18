@@ -11,21 +11,25 @@
 
 #include "import/Numcpp.h"
 #include "src/operator<<.cpp"
-#include "src/operator==.cpp"
 
 using namespace std;
 
 int main()
 {
     Numcpp  Numcpp;
-    Numcpp.listZero3D(10, 10, 3);
-    Numcpp.listZero2D(5, 5);
+    Numcpp.listZero3D(5, 5, 3);
+    Numcpp.listZero2D(3, 3);
     Numcpp.listZero1D(2);
     vector<float> vect;
     vect.push_back(8);
     vect.push_back(16);
-    cout << Numcpp.isEqual(vect) << endl;
-    
+    Numcpp.sum1D(vect);
+    vect[1] = 1;
+
     cout << Numcpp << endl;
+
+    cout << Numcpp.isEqual(vect) << endl;
+
+    cout << Numcpp.min1D() << endl;
     return 0;
 }

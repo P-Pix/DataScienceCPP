@@ -13,7 +13,10 @@
 
 Numcpp::Numcpp()
 {
-    //m_pointervectbool.push_back(&isEqual(list1, list2));
+    listZero1D();
+    listZero2D();
+    listZero3D();
+    //m_ftab1D[0] = &isEqual;
 }
 Numcpp::~Numcpp()
 {
