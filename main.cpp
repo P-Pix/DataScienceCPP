@@ -20,13 +20,14 @@ using namespace std;
 int main()
 {
     Numcpp Numcpp;
-    Pltcpp Window;
+    Pltcpp Window("index");
     ImageInfo Image("Image/index.png");
-    Numcpp.listZero3D(Image.getWidth(), Image.getHeight(), 3);
-    Numcpp.sum(Image.getRGB());
-    Numcpp.listZero2D(3, 3);
-    Numcpp.listZero1D(2);
     vector<float> vect;
+
+    Numcpp.listZero3D(3, 3, 3);
+    Numcpp.listZero2D(Image.getWidth(), Image.getHeight());
+    Numcpp.sum(Image.getGreen());
+    Numcpp.listZero1D(2);
     vect.push_back(8);
     vect.push_back(16);
     Numcpp.sum(vect);
