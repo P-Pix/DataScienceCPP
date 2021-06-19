@@ -4,6 +4,11 @@ MODULE	=	-lsfml-window\
 
 SRC		=	main.cpp\
 			\
+			src/ImageInfo/Accessor.cpp\
+			src/ImageInfo/Color.cpp\
+			src/ImageInfo/Constructor.cpp\
+			src/ImageInfo/Size.cpp\
+			\
 			src/Numcpp/Accessor.cpp\
 			src/Numcpp/Constructor.cpp\
 			src/Numcpp/Equal.cpp\

@@ -34,20 +34,6 @@ class Pltcpp
 
         ////////////////////////////////////////
 
-        /// 3D list for Red, Green, Blue
-        std::vector<std::vector<std::vector<int>>> m_rgb;
-
-        /// 2D list for Red
-        std::vector<std::vector<int>>   m_r;
-
-        /// 2D list for Green
-        std::vector<std::vector<int>>   m_g;
-
-        /// 2D list for Blue
-        std::vector<std::vector<int>>   m_b;
-
-        ////////////////////////////////////////
-
         /// Render Window to draw        
         sf::RenderWindow    *m_Window;
 

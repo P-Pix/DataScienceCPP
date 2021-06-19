@@ -11,6 +11,7 @@
 
 #include "import/Numcpp.h"
 #include "import/Pltcpp.h"
+#include "import/ImageInfo.h"
 
 #include "src/operator<<.cpp"
 
@@ -20,7 +21,9 @@ int main()
 {
     Numcpp Numcpp;
     Pltcpp Window;
-    Numcpp.listZero3D(5, 5, 3);
+    ImageInfo Image("Image/index.png");
+    Numcpp.listZero3D(Image.getWidth(), Image.getHeight(), 3);
+    Numcpp.sum(Image.getRGB());
     Numcpp.listZero2D(3, 3);
     Numcpp.listZero1D(2);
     vector<float> vect;
