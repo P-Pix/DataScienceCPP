@@ -44,12 +44,13 @@ class GradientDescent
         float function(float a, float b, float c, int x);
 
         /// 
-        void cout();
+        void cout(void);
 
-        float derivateA();
-        float derivateB();
+        /// 
+        float derivateA(void);
+        float derivateB(void);
 
-        void tangeante();
+        void tangeante(void);
 
     protected:
         ////////////////////////////////////////
@@ -62,26 +63,23 @@ class GradientDescent
             float x = 0;
             float y = 0;
         };
-    
-    private:
-        std::vector<Coord2D> m_vectorcoord;
+
+        /// Vector of coord2D 
+        std::vector<Coord2D>    m_VectorCoord2D;
 
     public:
         ////////////////////////////////////////
 
         /// Default constructor
-        GradientDescent();
+        GradientDescent(void);
 
         /// Destructor
-        ~GradientDescent();
+        ~GradientDescent(void);
 
         ////////////////////////////////////////
 
         /// \return True if the gradient descent is ended, False if not
-        bool isRunning();
-
-        /// \return list of points
-        std::vector<Coord2D> getListPoint();
+        bool isRunning(void);
 
         ////////////////////////////////////////
         
@@ -93,7 +91,10 @@ class GradientDescent
         ////////////////////////////////////////
 
         /// One gradient descent part
-        void execution();
+        void execution(void);
+
+        /// Reset the Coord2D list
+        void resetListCoord2D(void);
 };
 
 #endif

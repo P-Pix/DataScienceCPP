@@ -4,6 +4,10 @@ MODULE	=	-lsfml-window\
 
 SRC		=	main.cpp\
 			\
+			src/GradientDescent/Accessor.cpp\
+			src/GradientDescent/Constructor.cpp\
+			src/GradientDescent/Neuron.cpp\
+			\
 			src/ImageInfo/Accessor.cpp\
 			src/ImageInfo/Color.cpp\
 			src/ImageInfo/Constructor.cpp\

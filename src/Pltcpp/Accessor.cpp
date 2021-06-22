@@ -15,3 +15,7 @@ bool Pltcpp::isOpen()
 {
     return m_Window -> isOpen();
 }
+std::vector<GradientDescent::Coord2D> Pltcpp::getListCoord2D() const
+{
+    return m_VectorCoord2D;
+}

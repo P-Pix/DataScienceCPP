@@ -15,7 +15,9 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-class Pltcpp
+#include "GradientDescent.h"
+
+class Pltcpp : public GradientDescent
 {
     private:
         ////////////////////////////////////////
@@ -54,15 +56,15 @@ class Pltcpp
         ////////////////////////////////////////
 
         /// Draw abscissa and ordered
-        void makeLine();
+        void makeLine(void);
         
         ////////////////////////////////////////
 
         /// Update screen with points and abscissa and ordered
-        void allDrawing();
+        void allDrawing(void);
 
         /// add in the draw list the abscissa an ordered and the 
-        void drawGraphicScale();
+        void drawGraphicScale(void);
 
         ////////////////////////////////////////
 
@@ -81,53 +83,40 @@ class Pltcpp
         ////////////////////////////////////////
 
         /// Transform all Coord2D in circle for drawing
-        void drawAllCoord2D();
+        void drawAllCoord2D(void);
 
     protected:
-        ////////////////////////////////////////
-
-        /// Struct to create a point in the graphic
-        /// \param x value for abscissa
-        /// \param y value for ordered
-        struct Coord2D
-        {
-            float x;
-            float y;
-        };
-    
-    private:
-        ////////////////////////////////////////
-
-        /// Vector of coord2D 
-        std::vector<Coord2D>    m_VectorCoord2D;
 
     public:
         ////////////////////////////////////////
 
         /// Default constructor 
         /// Default name : Window
-        Pltcpp();
+        Pltcpp(void);
 
         /// Contructor with a specific name
         /// \param name_window window name
         Pltcpp(const char *name_window);
 
         /// Destructor
-        ~Pltcpp();
+        ~Pltcpp(void);
         
         ////////////////////////////////////////
 
         /// Test if the window is open
         /// \return True if the window is open False if not
-        bool isOpen();
+        bool isOpen(void);
+
+        /// \return list Coord2D
+        std::vector<GradientDescent::Coord2D> getListCoord2D(void) const;
         
         ////////////////////////////////////////
 
         /// Connect keybord and the cross to function
-        void pollEvent();
+        void pollEvent(void);
 
         /// Update screen call function
-        void updateScreen();
+        void updateScreen(void);
 
         /// Transform two value x and y to Coord and put it in the Vector Coord2D
         /// \param x abscissa value

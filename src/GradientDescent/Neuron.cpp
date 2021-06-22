@@ -14,34 +14,34 @@
 void GradientDescent::cout()
 {
     float derivate = 1;
-    derivate /= (2 * m_vectorcoord.size());
+    derivate /= (2 * m_VectorCoord2D.size());
     float derivatestock = 0;
-    for(int x = 0; x < m_vectorcoord.size(); x ++)
+    for(int x = 0; x < m_VectorCoord2D.size(); x ++)
     {
-        derivatestock += ((function(m_a, m_b, m_c, m_vectorcoord[x].x) - m_vectorcoord[x].y) * (function(m_a, m_b, m_c, m_vectorcoord[x].x) - m_vectorcoord[x].y));
+        derivatestock += ((function(m_a, m_b, m_c, m_VectorCoord2D[x].x) - m_VectorCoord2D[x].y) * (function(m_a, m_b, m_c, m_VectorCoord2D[x].x) - m_VectorCoord2D[x].y));
     }
-    m_cout =  derivate * derivatestock;
+    m_cout = derivate * derivatestock;
 }
 
 float GradientDescent::derivateA()
 {
     float derivate = 1;
-    derivate /= m_vectorcoord.size();
+    derivate /= m_VectorCoord2D.size();
     float derivatestock = 0;
-    for(int x = 0; x < m_vectorcoord.size(); x ++)
+    for(int x = 0; x < m_VectorCoord2D.size(); x ++)
     {
-        derivatestock +=  (x * (function(m_a, m_b, m_c, m_vectorcoord[x].x) - m_vectorcoord[x].y));
+        derivatestock +=  (x * (function(m_a, m_b, m_c, m_VectorCoord2D[x].x) - m_VectorCoord2D[x].y));
     }
     return derivate * derivatestock;
 }
 float GradientDescent::derivateB()
 {
     float derivate = 1;
-    derivate /= m_vectorcoord.size();
+    derivate /= m_VectorCoord2D.size();
     float derivatestock = 0;
-    for(int x = 0; x < m_vectorcoord.size(); x ++)
+    for(int x = 0; x < m_VectorCoord2D.size(); x ++)
     {
-        derivatestock +=  (function(m_a, m_b, m_c, m_vectorcoord[x].x) - m_vectorcoord[x].y);
+        derivatestock +=  (function(m_a, m_b, m_c, m_VectorCoord2D[x].x) - m_VectorCoord2D[x].y);
     }
     return derivate * derivatestock;
 }

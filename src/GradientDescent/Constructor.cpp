@@ -40,5 +40,10 @@ void GradientDescent::addCoord2D(float x, float y)
     Coord2D coord;
     coord.x = x;
     coord.y = y;
-    m_vectorcoord.push_back(coord);
+    m_VectorCoord2D.push_back(coord);
+}
+
+void GradientDescent::resetListCoord2D()
+{
+    m_VectorCoord2D.clear();
 }
