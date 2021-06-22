@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../import/Numcpp.h"
+#include "../../include/Numcpp.h"
 
 float Numcpp::max(std::vector<float> list)
 {

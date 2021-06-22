@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../import/Numcpp.h"
+#include "../../include/Numcpp.h"
 
 void Numcpp::identity1D()
 {

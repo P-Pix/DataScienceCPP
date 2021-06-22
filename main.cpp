@@ -9,9 +9,9 @@
  * 
  */
 
-#include "import/Numcpp.h"
-#include "import/Pltcpp.h"
-#include "import/ImageInfo.h"
+#include "include/Numcpp.h"
+#include "include/Pltcpp.h"
+#include "include/ImageInfo.h"
 
 #include "src/operator<<.cpp"
 

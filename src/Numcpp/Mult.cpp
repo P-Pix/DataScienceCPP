@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../import/Numcpp.h"
+#include "../../include/Numcpp.h"
 
 std::vector<float> Numcpp::mult(std::vector<float> list)
 {

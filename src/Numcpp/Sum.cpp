@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../import/Numcpp.h"
+#include "../../include/Numcpp.h"
 
 std::vector<float> Numcpp::sum(std::vector<float> list1, std::vector<float> list2)
 {
