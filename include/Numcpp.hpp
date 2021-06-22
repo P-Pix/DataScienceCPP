@@ -1,5 +1,5 @@
 /**
- * @file Numcpp.h
+ * @file Numcpp.hpp
  * @author Guillaume LEMONNIER
  * @brief 
  * @version 0.1

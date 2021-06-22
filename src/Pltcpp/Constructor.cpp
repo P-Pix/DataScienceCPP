@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../include/Pltcpp.h"
+#include "../../include/Pltcpp.hpp"
 
 Pltcpp::Pltcpp()
 {

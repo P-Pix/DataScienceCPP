@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../include/Numcpp.h"
+#include "../../include/Numcpp.hpp"
 
 std::vector<bool> Numcpp::isInferiorOrEqual(std::vector<float> list1, std::vector<float> list2)
 {

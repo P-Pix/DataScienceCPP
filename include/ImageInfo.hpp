@@ -1,5 +1,5 @@
 /**
- * @file ImageInfo.h
+ * @file ImageInfo.hpp
  * @author Guillaume LEMONNIER
  * @brief 
  * @version 0.1

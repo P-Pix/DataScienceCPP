@@ -1,5 +1,5 @@
 /**
- * @file GradientDescent.h
+ * @file GradientDescent.hpp
  * @author your name (you@domain.com)
  * @brief 
  * @version 0.1

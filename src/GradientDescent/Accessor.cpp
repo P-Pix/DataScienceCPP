@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../include/GradientDescent.h"
+#include "../../include/GradientDescent.hpp"
 
 bool GradientDescent::isRunning()
 {

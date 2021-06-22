@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../include/Numcpp.h"
+#include "../../include/Numcpp.hpp"
 
 std::vector<float> Numcpp::sub(std::vector<float> list1, std::vector<float> list2)
 {

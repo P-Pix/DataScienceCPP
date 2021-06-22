@@ -9,7 +9,7 @@
  * 
  */
 
-#include "../../include/ImageInfo.h"
+#include "../../include/ImageInfo.hpp"
 
 ///////////////////////////////////////
 

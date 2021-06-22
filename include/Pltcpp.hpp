@@ -1,5 +1,5 @@
 /**
- * @file Pltcpp.h
+ * @file Pltcpp.hpp
  * @author Guillaume LEMONNIER
  * @brief 
  * @version 0.1
@@ -15,7 +15,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-#include "GradientDescent.h"
+#include "GradientDescent.hpp"
 
 class Pltcpp : public GradientDescent
 {

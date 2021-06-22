@@ -9,9 +9,9 @@
  * 
  */
 
-#include "../include/Numcpp.h"
-#include "../include/Pltcpp.h"
-#include "../include/GradientDescent.h"
+#include "../include/Numcpp.hpp"
+#include "../include/Pltcpp.hpp"
+#include "../include/GradientDescent.hpp"
 
 /// Print 1D list floatant
 std::ostream &operator<<(std::ostream &flux, std::vector<float> list)
