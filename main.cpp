@@ -39,6 +39,10 @@ int main()
 
     cout << Numcpp.min1D() << endl;
 
+    Numcpp.identity2D(10);
+
+    cout << Numcpp.getlist2D() << endl;
+
     while(Window.isOpen())
     {
         Window.pollEvent();

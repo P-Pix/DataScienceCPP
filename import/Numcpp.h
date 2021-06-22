@@ -382,6 +382,19 @@ class Numcpp
         void listZero3D(unsigned int x = 1, unsigned int y = 1, unsigned int z = 1);
 
         ////////////////////////////////////////
+        
+        /// Transform the matrix 1D to identity matrix
+        void identity1D(void);
+
+        /// Transform the matrix 2D to identity matrix
+        /// \param size of the matrix (min 1)
+        void identity2D(unsigned int size = 1);
+
+        /// Transform the matrix 3D to identity matrix
+        /// \param size of the matrix (min 1)
+        void identity3D(unsigned int size = 1);
+
+        ////////////////////////////////////////
 
         /// Sum an enter list 1D and the class list 1D, both list need the same size
         /// \param list The list to additional to the class list 1D

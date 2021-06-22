@@ -16,6 +16,7 @@ SRC		=	main.cpp\
 			src/Numcpp/Accessor.cpp\
 			src/Numcpp/Constructor.cpp\
 			src/Numcpp/Equal.cpp\
+			src/Numcpp/Identity.cpp\
 			src/Numcpp/Inferior.cpp\
 			src/Numcpp/InferiorOrEqual.cpp\
 			src/Numcpp/Max.cpp\

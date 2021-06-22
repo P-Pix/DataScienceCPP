@@ -103,6 +103,7 @@ std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
 }
 
 /// Print list Coord2D
+/*
 std::ostream &operator<<(std::ostream &flux, std::vector<GradientDescent::Coord2D> list)
 {
     for(int i = 0; i < list.size(); i ++)
@@ -112,4 +113,4 @@ std::ostream &operator<<(std::ostream &flux, std::vector<GradientDescent::Coord2
         flux << "y = " << list[i].y << std::endl;
     }
     return flux;
-}
+}*/
