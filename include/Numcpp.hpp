@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef DEF_NUMCPP
-#define DEF_NUMCPP
+#ifndef _NUMCPP_HPP_
+#define _NUMCPP_HPP_
 
 #include <iostream>
 #include <vector>

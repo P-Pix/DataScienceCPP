@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef DEF_PLTCPP
-#define DEF_PLTCPP
+#ifndef _PLTCPP_HPP_
+#define _PLTCPP_HPP_
 
 #include <SFML/Graphics.hpp>
 #include <vector>

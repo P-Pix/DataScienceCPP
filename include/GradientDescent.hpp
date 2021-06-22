@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef DEF_GRADIENTDESCENT
-#define DEF_GRADIENTDESCENT
+#ifndef _GRADIENTDESCENT_HPP_
+#define _GRADIENTDESCENT_HPP_
 
 #include <iostream>
 #include <vector>

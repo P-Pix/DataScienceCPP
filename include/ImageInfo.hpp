@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef DEF_IMAGEINFO
-#define DEF_IMAGEINFO
+#ifndef _IMAGEINFO_HPP_
+#define _IMAGEINFO_HPP_
 
 #include <SFML/Graphics/Image.hpp>
 #include <SFML/Graphics/Color.hpp>
