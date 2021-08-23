@@ -56,7 +56,7 @@ std::ostream &operator<<(std::ostream &flux, std::vector<bool> list)
     {
         if(list[x])
         {
-            flux << "True, ";
+            flux << "True,  ";
         }
         else
         {
@@ -101,16 +101,3 @@ std::ostream &operator<<(std::ostream &flux, Numcpp Numcpp)
     flux << Numcpp.getlist1D();
     return flux;
 }
-
-/// Print list Coord2D
-/*
-std::ostream &operator<<(std::ostream &flux, std::vector<GradientDescent::Coord2D> list)
-{
-    for(int i = 0; i < list.size(); i ++)
-    {
-        flux << std::endl << "########## " << i + 1 << " / " << list.size() << " ##########" << std::endl << std::endl;
-        flux << "x = " << list[i].x << std::endl;
-        flux << "y = " << list[i].y << std::endl;
-    }
-    return flux;
-}*/

@@ -11,7 +11,7 @@
 
 #include "../../include/Pltcpp.hpp"
 
-Pltcpp::Pltcpp()
+Pltcpp::Pltcpp(void)
 {
     this -> m_Window = nullptr;
     this -> m_Window = new sf::RenderWindow(sf::VideoMode(m_width, m_height), "Window");
@@ -26,7 +26,7 @@ Pltcpp::Pltcpp(const char *namewindow)
     this -> m_Window -> setFramerateLimit(60);
     makeLine();
 }
-Pltcpp::~Pltcpp()
+Pltcpp::~Pltcpp(void)
 {
 
 }

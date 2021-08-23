@@ -13,7 +13,7 @@
 
 ///////////////////////////////////////
 
-ImageInfo::ImageInfo()
+ImageInfo::ImageInfo(void)
 {
 
 }
@@ -21,7 +21,7 @@ ImageInfo::ImageInfo(const char *name)
 {
     newImage(name);
 }
-ImageInfo::~ImageInfo()
+ImageInfo::~ImageInfo(void)
 {
 
 }

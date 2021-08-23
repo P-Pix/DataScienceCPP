@@ -23,11 +23,6 @@ class Numcpp
     private:
         ////////////////////////////////////////
         
-        /*
-        typedef vector<bool> (*fptr1D)(vector<float>, vector<float>);
-        fptr1D m_ftab1D[5];
-        */
-        
         /// List 1D
         vector<float> m_list1D;
 
@@ -438,6 +433,20 @@ class Numcpp
         /// \param list The list to multiply to the class list 3D
         /// \return vector 3D with one value
         vector<vector<vector<float>>> mult(vector<vector<vector<float>>> list);
+
+        ////////////////////////////////////////
+
+        /// Print 1D matrix
+        void print1D(void) const;
+
+        /// Print 2D matrix
+        void print2D(void) const;
+
+        /// Print 3D matrix
+        void print3D(void) const;
+
+        /// Print all matrix
+        void print(void) const;
 };
 
 #endif

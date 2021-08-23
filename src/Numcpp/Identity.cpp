@@ -11,7 +11,7 @@
 
 #include "../../include/Numcpp.hpp"
 
-void Numcpp::identity1D()
+void Numcpp::identity1D(void)
 {
     m_list1D.clear();
     m_list1D.push_back(1);

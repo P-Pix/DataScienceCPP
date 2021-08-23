@@ -11,7 +11,7 @@
 
 #include "../../include/GradientDescent.hpp"
 
-bool GradientDescent::isRunning()
+bool GradientDescent::isRunning(void)
 {
     return m_running;
 }

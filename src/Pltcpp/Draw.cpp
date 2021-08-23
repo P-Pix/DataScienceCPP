@@ -11,7 +11,7 @@
 
 #include "../../include/Pltcpp.hpp"
 
-void Pltcpp::allDrawing()
+void Pltcpp::allDrawing(void)
 {
     this -> m_Window -> clear();
     
@@ -20,7 +20,7 @@ void Pltcpp::allDrawing()
 
     this -> m_Window -> display();
 }
-void Pltcpp::drawGraphicScale()
+void Pltcpp::drawGraphicScale(void)
 {
     drawRectangle(m_linex);
     drawRectangle(m_liney);
@@ -53,7 +53,7 @@ void Pltcpp::drawPoint(sf::CircleShape point)
 {
     this -> m_Window -> draw(point);
 }
-void Pltcpp::drawAllCoord2D()
+void Pltcpp::drawAllCoord2D(void)
 {
     sf::CircleShape point;
     point.setRadius(1);

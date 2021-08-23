@@ -13,11 +13,9 @@
 #include "include/Pltcpp.hpp"
 #include "include/ImageInfo.hpp"
 
-#include "src/operator<<.cpp"
-
 using namespace std;
 
-int main()
+int main(void)
 {
     Numcpp Numcpp;
     Pltcpp Window("index");
@@ -33,20 +31,18 @@ int main()
     Numcpp.sum(vect);
     vect[1] = 1;
 
-    cout << Numcpp << endl;
+    Numcpp.print();
 
-    cout << Numcpp.isEqual(vect) << endl;
+    Numcpp.print3D();
 
-    cout << Numcpp.min1D() << endl;
+    cout << "The minimum value of 1D list it's = " << Numcpp.min1D() << endl;
 
     Numcpp.identity2D(10);
-
-    cout << Numcpp.getlist2D() << endl;
 
     while(Window.isOpen())
     {
         Window.pollEvent();
         Window.updateScreen();
     }
-    return 0;
+    return EXIT_SUCCESS;
 }

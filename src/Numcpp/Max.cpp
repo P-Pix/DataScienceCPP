@@ -50,15 +50,15 @@ float Numcpp::max(std::vector<std::vector<std::vector<float>>> list)
     return value;
 }
 
-float Numcpp::max1D()
+float Numcpp::max1D(void)
 {
     return max(m_list1D);
 }
-float Numcpp::max2D()
+float Numcpp::max2D(void)
 {
     return max(m_list2D);
 }
-float Numcpp::max3D()
+float Numcpp::max3D(void)
 {
     return max(m_list3D);
 }

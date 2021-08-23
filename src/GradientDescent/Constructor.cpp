@@ -11,17 +11,17 @@
 
 #include "../../include/GradientDescent.hpp"
 
-GradientDescent::GradientDescent()
+GradientDescent::GradientDescent(void)
 {
     
 }
 
-GradientDescent::~GradientDescent()
+GradientDescent::~GradientDescent(void)
 {
 
 }
 
-void GradientDescent::execution()
+void GradientDescent::execution(void)
 {
     tangeante();
     cout();
@@ -43,7 +43,7 @@ void GradientDescent::addCoord2D(float x, float y)
     m_VectorCoord2D.push_back(coord);
 }
 
-void GradientDescent::resetListCoord2D()
+void GradientDescent::resetListCoord2D(void)
 {
     m_VectorCoord2D.clear();
 }

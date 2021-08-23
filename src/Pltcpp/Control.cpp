@@ -11,7 +11,7 @@
 
 #include "../../include/Pltcpp.hpp"
 
-void Pltcpp::pollEvent()
+void Pltcpp::pollEvent(void)
 {
     if(this -> m_Window -> pollEvent(this -> m_Event))
     {
@@ -28,7 +28,7 @@ void Pltcpp::pollEvent()
         }
     }
 }
-void Pltcpp::updateScreen()
+void Pltcpp::updateScreen(void)
 {
     allDrawing();
 }

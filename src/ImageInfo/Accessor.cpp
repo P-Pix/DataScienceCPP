@@ -13,26 +13,26 @@
 
 ///////////////////////////////////////
 
-std::vector<std::vector<float>> ImageInfo::getRed() const
+std::vector<std::vector<float>> ImageInfo::getRed(void) const
 {
     return m_Red;
 }
-std::vector<std::vector<float>> ImageInfo::getBlue() const
+std::vector<std::vector<float>> ImageInfo::getBlue(void) const
 {
     return m_Blue;
 }
-std::vector<std::vector<float>> ImageInfo::getGreen() const
+std::vector<std::vector<float>> ImageInfo::getGreen(void) const
 {
     return m_Green;
 }
-std::vector<std::vector<std::vector<float>>> ImageInfo::getRGB() const
+std::vector<std::vector<std::vector<float>>> ImageInfo::getRGB(void) const
 {
     return m_RGB;
 }
 
 ///////////////////////////////////////
 
-const char *ImageInfo::getAdress() const
+const char *ImageInfo::getAdress(void) const
 {
     return m_nameimage;
 }

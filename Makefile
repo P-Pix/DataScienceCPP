@@ -22,6 +22,7 @@ SRC		=	main.cpp\
 			src/Numcpp/Max.cpp\
 			src/Numcpp/Min.cpp\
 			src/Numcpp/Mult.cpp\
+			src/Numcpp/Print.cpp\
 			src/Numcpp/Sub.cpp\
 			src/Numcpp/Sum.cpp\
 			src/Numcpp/Superior.cpp\
@@ -36,10 +37,15 @@ SRC		=	main.cpp\
 			src/Pltcpp/Line.cpp\
 			\
 
-FILE	=	main.o
+FILE	=	main.obj
+
+VERSION	=	-std=c++2a\
 
 cpp:
-	@(g++ -o $(FILE) $(SRC) $(MODULE))
+	@(g++ -o $(FILE) $(SRC) $(MODULE) $(VERSION))
 
 val:
-	@(valgrind g++ -o $(FILE) $(SRC) $(MODULE))
+	@(valgrind g++ -o $(FILE) $(SRC) $(MODULE) $(VERSION))
+
+run:
+	@(./$(FILE))

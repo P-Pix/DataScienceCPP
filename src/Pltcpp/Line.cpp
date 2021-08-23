@@ -11,7 +11,7 @@
 
 #include "../../include/Pltcpp.hpp"
 
-void Pltcpp::makeLine()
+void Pltcpp::makeLine(void)
 {
     m_linex.setSize(sf::Vector2f(300.f, 1.f));
     m_linex.setPosition(sf::Vector2f(50.f, 350.f));

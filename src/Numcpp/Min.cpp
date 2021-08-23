@@ -50,15 +50,15 @@ float Numcpp::min(std::vector<std::vector<std::vector<float>>> list)
     return value;
 }
 
-float Numcpp::min1D()
+float Numcpp::min1D(void)
 {
     return min(m_list1D);
 }
-float Numcpp::min2D()
+float Numcpp::min2D(void)
 {
     return min(m_list2D);
 }
-float Numcpp::min3D()
+float Numcpp::min3D(void)
 {
     return min(m_list3D);
 }

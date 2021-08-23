@@ -11,15 +11,15 @@
 
 #include "../../include/Numcpp.hpp"
 
-std::vector<float> Numcpp::getlist1D()
+std::vector<float> Numcpp::getlist1D(void)
 {
     return m_list1D;
 }
-std::vector<std::vector<float>> Numcpp::getlist2D()
+std::vector<std::vector<float>> Numcpp::getlist2D(void)
 {
     return m_list2D;
 }
-std::vector<std::vector<std::vector<float>>> Numcpp::getlist3D()
+std::vector<std::vector<std::vector<float>>> Numcpp::getlist3D(void)
 {
     return m_list3D;
 }

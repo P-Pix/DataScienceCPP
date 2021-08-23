@@ -11,7 +11,7 @@
 
 #include "../../include/GradientDescent.hpp"
 
-void GradientDescent::cout()
+void GradientDescent::cout(void)
 {
     float derivate = 1;
     derivate /= (2 * m_VectorCoord2D.size());
@@ -23,7 +23,7 @@ void GradientDescent::cout()
     m_cout = derivate * derivatestock;
 }
 
-float GradientDescent::derivateA()
+float GradientDescent::derivateA(void)
 {
     float derivate = 1;
     derivate /= m_VectorCoord2D.size();
@@ -34,7 +34,7 @@ float GradientDescent::derivateA()
     }
     return derivate * derivatestock;
 }
-float GradientDescent::derivateB()
+float GradientDescent::derivateB(void)
 {
     float derivate = 1;
     derivate /= m_VectorCoord2D.size();
@@ -46,7 +46,7 @@ float GradientDescent::derivateB()
     return derivate * derivatestock;
 }
 
-void GradientDescent::tangeante()
+void GradientDescent::tangeante(void)
 {
     m_a = m_a - m_alpha * derivateA();
     m_b = m_b - m_alpha * derivateA();

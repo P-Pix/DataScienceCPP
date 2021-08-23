@@ -12,6 +12,9 @@
 #ifndef _USERINTERFACE_HPP_
 #define _USERINTERFACE_HPP_
 
+//#include <qt5/QtGui/qguiapplication.h>
+
+
 class UserInterface
 {
     private:

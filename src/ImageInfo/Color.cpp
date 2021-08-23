@@ -11,7 +11,7 @@
 
 #include "../../include/ImageInfo.hpp"
 
-void ImageInfo::imageRed()
+void ImageInfo::imageRed(void)
 {
     m_Red.clear();
     for(int j = 0; j < m_height; j ++)
@@ -26,7 +26,7 @@ void ImageInfo::imageRed()
         m_Red.push_back(vect);
     }
 }
-void ImageInfo::imageBlue()
+void ImageInfo::imageBlue(void)
 {
     m_Blue.clear();
     for(int j = 0; j < m_height; j ++)
@@ -41,7 +41,7 @@ void ImageInfo::imageBlue()
         m_Blue.push_back(vect);
     }
 }
-void ImageInfo::imageGreen()
+void ImageInfo::imageGreen(void)
 {
     m_Green.clear();
     for(int j = 0; j < m_height; j ++)
@@ -57,7 +57,7 @@ void ImageInfo::imageGreen()
     }
 }
 
-void ImageInfo::imageRGB()
+void ImageInfo::imageRGB(void)
 {
     m_RGB.clear();
 

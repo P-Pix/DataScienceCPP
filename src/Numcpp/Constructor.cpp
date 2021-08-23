@@ -11,14 +11,14 @@
 
 #include "../../include/Numcpp.hpp"
 
-Numcpp::Numcpp()
+Numcpp::Numcpp(void)
 {
     listZero1D();
     listZero2D();
     listZero3D();
     //m_ftab1D[0] = &isEqual;
 }
-Numcpp::~Numcpp()
+Numcpp::~Numcpp(void)
 {
     
 }

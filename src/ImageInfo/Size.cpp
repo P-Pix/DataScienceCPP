@@ -11,7 +11,7 @@
 
 #include "../../include/ImageInfo.hpp"
 
-void ImageInfo::imageSize()
+void ImageInfo::imageSize(void)
 {
     m_width = m_Image.getSize().x;
     m_height = m_Image.getSize().y;
