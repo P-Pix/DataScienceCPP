@@ -13,27 +13,35 @@
 #include "include/Pltcpp.hpp"
 #include "include/ImageInfo.hpp"
 
-using namespace std;
+//using namespace std;
 
 int main(void)
 {
     Numcpp Numcpp;
     Pltcpp Window("index");
     ImageInfo Image("Image/index.png");
-    vector<float> vect;
+    std::vector<float> vect = {16, 8, 4, 19, 7, 1};
+    std::vector<std::vector<float>> vect2D = 
+    {
+        {7, 5, 9},
+        {4, 16, 78},
+        {84, 99, 1}
+    };
 
     Numcpp.listZero3D(3, 3, 3);
-    Numcpp.listZero2D(Image.getWidth(), Image.getHeight());
-    Numcpp.sum(Image.getGreen());
-    Numcpp.listZero1D(2);
-    vect.push_back(8);
-    vect.push_back(16);
+    //Numcpp.listZero2D(Image.getWidth(), Image.getHeight());
+    //Numcpp.sum(Image.getGreen());
+    Numcpp.listZero1D(6);
     Numcpp.sum(vect);
-    vect[1] = 1;
+    Numcpp.print1D();
+    Numcpp.sort1D();
+    Numcpp.print1D();
 
-    Numcpp.print();
-
-    Numcpp.print3D();
+    Numcpp.listZero2D(3 , 3);
+    Numcpp.sum(vect2D);
+    Numcpp.print2D();
+    Numcpp.sort2D();
+    Numcpp.print2D();
 
     cout << "The minimum value of 1D list it's = " << Numcpp.min1D() << endl;
 

@@ -23,6 +23,7 @@ SRC		=	main.cpp\
 			src/Numcpp/Min.cpp\
 			src/Numcpp/Mult.cpp\
 			src/Numcpp/Print.cpp\
+			src/Numcpp/Sort.cpp\
 			src/Numcpp/Sub.cpp\
 			src/Numcpp/Sum.cpp\
 			src/Numcpp/Superior.cpp\

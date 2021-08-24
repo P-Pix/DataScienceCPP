@@ -24,13 +24,13 @@ class Numcpp
         ////////////////////////////////////////
         
         /// List 1D
-        vector<float> m_list1D;
+        std::vector<float> m_list1D;
 
         /// List 2D
-        vector<vector<float>> m_list2D;
+        std::vector<std::vector<float>> m_list2D;
 
         /// List 3D
-        vector<vector<vector<float>>> m_list3D;
+        std::vector<std::vector<std::vector<float>>> m_list3D;
 
         ////////////////////////////////////////
 
@@ -38,19 +38,19 @@ class Numcpp
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the two value in the same position are equal False if not
-        vector<bool> isEqual(vector<float> list1, vector<float> list2);
+        std::vector<bool> isEqual(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative equal 2D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the two value in the same position are equal False if not
-        vector<vector<bool>> isEqual(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<bool>> isEqual(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative equal 3D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the two value in the same position are equal False if not
-        vector<vector<vector<bool>>> isEqual(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<bool>>> isEqual(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
@@ -58,19 +58,19 @@ class Numcpp
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior at the same position Falseif not
-        vector<bool> isInferior(vector<float> list1, vector<float> list2);
+        std::vector<bool> isInferior(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative inferior 2D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior at the same position Falseif not
-        vector<vector<bool>> isInferior(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<bool>> isInferior(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative inferior 3D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior at the same position Falseif not
-        vector<vector<vector<bool>>> isInferior(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<bool>>> isInferior(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
@@ -78,19 +78,19 @@ class Numcpp
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<bool> isInferiorOrEqual(vector<float> list1, vector<float> list2);
+        std::vector<bool> isInferiorOrEqual(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative inferior or equal 2D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<vector<bool>> isInferiorOrEqual(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<bool>> isInferiorOrEqual(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative inferior or equal 3D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<vector<vector<bool>>> isInferiorOrEqual(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<bool>>> isInferiorOrEqual(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
@@ -98,19 +98,19 @@ class Numcpp
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is superior at the same position Falseif not
-        vector<bool> isSuperior(vector<float> list1, vector<float> list2);
+        std::vector<bool> isSuperior(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative superior 2D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is superior at the same position Falseif not
-        vector<vector<bool>> isSuperior(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<bool>> isSuperior(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative superior 3D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is superior at the same position Falseif not
-        vector<vector<vector<bool>>> isSuperior(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<bool>>> isSuperior(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
@@ -118,53 +118,53 @@ class Numcpp
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<bool> isSuperiorOrEqual(vector<float> list1, vector<float> list2);
+        std::vector<bool> isSuperiorOrEqual(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative inferior or equal 2D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<vector<bool>> isSuperiorOrEqual(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<bool>> isSuperiorOrEqual(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative inferior or equal 3D
         /// \param list1 first list compare
         /// \param list2 second list compare
         /// \return vector where True if the first value is inferior or equal at the same position Falseif not
-        vector<vector<vector<bool>>> isSuperiorOrEqual(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<bool>>> isSuperiorOrEqual(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
         /// Relative min 1D
         /// \param list1 list who receve the result
         /// \return minimum value
-        float min(vector<float> list1);
+        float min(std::vector<float> list1);
 
         /// Relative min 2D
         /// \param list1 list who receve the result
         /// \return minimum value
-        float min(vector<vector<float>> list1);
+        float min(std::vector<std::vector<float>> list1);
 
         /// Relative min 3D
         /// \param list1 list who receve the result
         /// \return minimum value
-        float min(vector<vector<vector<float>>> list1);
+        float min(std::vector<std::vector<std::vector<float>>> list1);
 
         ////////////////////////////////////////
 
         /// Relative max 1D
         /// \param list1 list who receve the result
         /// \return maximum value
-        float max(vector<float> list1);
+        float max(std::vector<float> list1);
 
         /// Relative max 2D
         /// \param list1 list who receve the result
         /// \return maximum value
-        float max(vector<vector<float>> list1);
+        float max(std::vector<std::vector<float>> list1);
 
         /// Relative max 3D
         /// \param list1 list who receve the result
         /// \return maximum value
-        float max(vector<vector<vector<float>>> list1);
+        float max(std::vector<std::vector<std::vector<float>>> list1);
 
         ////////////////////////////////////////
 
@@ -172,19 +172,19 @@ class Numcpp
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<float> sum(vector<float> list1, vector<float> list2);
+        std::vector<float> sum(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative sum 2D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<float>> sum(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<float>> sum(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative sum 3D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<vector<float>>> sum(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<float>>> sum(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
         ////////////////////////////////////////
 
@@ -192,19 +192,19 @@ class Numcpp
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<float> sub(vector<float> list1, vector<float> list2);
+        std::vector<float> sub(std::vector<float> list1, std::vector<float> list2);
 
         /// Relative sub 2D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<float>> sub(vector<vector<float>> list1, vector<vector<float>> list2);
+        std::vector<std::vector<float>> sub(std::vector<std::vector<float>> list1, std::vector<std::vector<float>> list2);
 
         /// Relative sub 3D
         /// \param list1 list who receve the result
         /// \param list2 list who send the value
         /// \return vector with the result
-        vector<vector<vector<float>>> sub(vector<vector<vector<float>>> list1, vector<vector<vector<float>>> list2);
+        std::vector<std::vector<std::vector<float>>> sub(std::vector<std::vector<std::vector<float>>> list1, std::vector<std::vector<std::vector<float>>> list2);
 
     protected:
 
@@ -222,100 +222,100 @@ class Numcpp
 
         /// Get the list 1D
         /// \return A vector done before
-        vector<float> getlist1D(void);
+        std::vector<float> getlist1D(void);
 
         /// Get the list 2D
         /// \return A vector done before
-        vector<vector<float>> getlist2D(void);
+        std::vector<std::vector<float>> getlist2D(void);
 
         /// Get the list 3D
         /// \return A vector done before
-        vector<vector<vector<float>>> getlist3D(void);
+        std::vector<std::vector<std::vector<float>>> getlist3D(void);
 
         ////////////////////////////////////////
 
         /// Create a boolean vector 
         /// \param list vector test with the class list 1D
         /// \return In the vector True if they are equal, False if not
-        vector<bool> isEqual(vector<float> list);
+        std::vector<bool> isEqual(std::vector<float> list);
 
         /// Create a boolean vector 
         /// \param list vector test with the class list 2D
         /// \return In the vector True if they are equal, False if not
-        vector<vector<bool>> isEqual(vector<vector<float>> list);
+        std::vector<std::vector<bool>> isEqual(std::vector<std::vector<float>> list);
 
         /// Create a boolean vector 
         /// \param list vector test with the class list 3D
         /// \return In the vector True if they are equal, False if not
-        vector<vector<vector<bool>>> isEqual(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<bool>>> isEqual(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Create a boolean vector
         /// \param list vector test with the class list 1D
         /// \return In the vector True if the class list 1D is inferior, False if not
-        vector<bool> isInferior(vector<float> list);
+        std::vector<bool> isInferior(std::vector<float> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 2D
         /// \return In the vector True if the class list 2D is inferior, False if not
-        vector<vector<bool>> isInferior(vector<vector<float>> list);
+        std::vector<std::vector<bool>> isInferior(std::vector<std::vector<float>> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 3D
         /// \return In the vector True if the class list 3D is inferior, False if not
-        vector<vector<vector<bool>>> isInferior(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<bool>>> isInferior(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Create a boolean vector
         /// \param list vector test with the class list 1D
         /// \return In the vector True if the class list 1D is inferior or equal, False if not
-        vector<bool> isInferiorOrEqual(vector<float> list);
+        std::vector<bool> isInferiorOrEqual(std::vector<float> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 2D
         /// \return In the vector True if the class list 2D is inferior or equal, False if not
-        vector<vector<bool>> isInferiorOrEqual(vector<vector<float>> list);
+        std::vector<std::vector<bool>> isInferiorOrEqual(std::vector<std::vector<float>> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 3D
         /// \return In the vector True if the class list 3D is inferior or equal, False if not
-        vector<vector<vector<bool>>> isInferiorOrEqual(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<bool>>> isInferiorOrEqual(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Create a boolean vector
         /// \param list vector test with the class list 1D
         /// \return In the vector True if the class list 1D is superior or equal, False if not
-        vector<bool> isSuperiorOrEqual(vector<float> list);
+        std::vector<bool> isSuperiorOrEqual(std::vector<float> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 2D
         /// \return In the vector True if the class list 2D is superior or equal, False if not
-        vector<vector<bool>> isSuperiorOrEqual(vector<vector<float>> list);
+        std::vector<std::vector<bool>> isSuperiorOrEqual(std::vector<std::vector<float>> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 3D
         /// \return In the vector True if the class list 3D is superior or equal, False if not
-        vector<vector<vector<bool>>> isSuperiorOrEqual(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<bool>>> isSuperiorOrEqual(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Create a boolean vector
         /// \param list vector test with the class list 1D
         /// \return In the vector True if the class list 1D is superior, False if not
-        vector<bool> isSuperior(vector<float> list);
+        std::vector<bool> isSuperior(std::vector<float> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 2D
         /// \return In the vector True if the class list 2D is superior, False if not
-        vector<vector<bool>> isSuperior(vector<vector<float>> list);
+        std::vector<std::vector<bool>> isSuperior(std::vector<std::vector<float>> list);
 
         /// Create a boolean vector
         /// \param list vector test with the class list 3D
         /// \return In the vector True if the class list 3D is superior, False if not
-        vector<vector<vector<bool>>> isSuperior(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<bool>>> isSuperior(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
         
@@ -349,15 +349,15 @@ class Numcpp
 
         /// Organize the list 1D from smallest to largest 
         /// \return The vector organize
-        vector<float> sort1D(void);
+        std::vector<float> sort1D(void);
 
         /// Organize the list 2D from smallest to largest 
         /// \return The vector organize
-        vector<vector<float>> sort2D(void);
+        std::vector<std::vector<float>> sort2D(void);
 
         /// Organize the list 2D from smallest to largest 
         /// \return The vector organize
-        vector<vector<vector<float>>> sort3D(void);
+        std::vector<std::vector<std::vector<float>>> sort3D(void);
 
         ////////////////////////////////////////
 
@@ -393,46 +393,46 @@ class Numcpp
 
         /// Sum an enter list 1D and the class list 1D, both list need the same size
         /// \param list The list to additional to the class list 1D
-        void sum(vector<float> list);
+        void sum(std::vector<float> list);
 
         /// Sum an enter list 2D and the class list 2D, both list need the same size
         /// \param list The list to additional to the class list 2D
-        void sum(vector<vector<float>> list);
+        void sum(std::vector<std::vector<float>> list);
 
         /// Sum an enter list 3D and the class list 3D, both list need the same size
         /// \param list The list to additional to the class list 3D
-        void sum(vector<vector<vector<float>>> list);
+        void sum(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Substraction an enter list 1D and the class list 1D, both list need the same size
         /// \param list The list to substract to the class list 1D
-        void sub(vector<float> list);
+        void sub(std::vector<float> list);
 
         /// Substraction an enter list 2D and the class list 2D, both list need the same size
         /// \param list The list to substract to the class list 2D
-        void sub(vector<vector<float>> list);
+        void sub(std::vector<std::vector<float>> list);
 
         /// Substraction an enter list 3D and the class list 3D, both list need the same size
         /// \param list3D The list to substract to the class list 3D
-        void sub(vector<vector<vector<float>>> list);
+        void sub(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
         /// Multiply an enter list 1D and the class list 1D (the two list need just one value)
         /// \param list The list to multiply to the class list 1D
         /// \return vector 1D with one value
-        vector<float> mult(vector<float> list);
+        std::vector<float> mult(std::vector<float> list);
 
         /// Multiply an enter list 2D and the class list 2D
         /// \param list The list to multiply to the class list 2D
         /// \return vector 2D with one value
-        vector<vector<float>> mult(vector<vector<float>> list);
+        std::vector<std::vector<float>> mult(std::vector<std::vector<float>> list);
 
         /// Multiply an enter list 3D and the class list 3D
         /// \param list The list to multiply to the class list 3D
         /// \return vector 3D with one value
-        vector<vector<vector<float>>> mult(vector<vector<vector<float>>> list);
+        std::vector<std::vector<std::vector<float>>> mult(std::vector<std::vector<std::vector<float>>> list);
 
         ////////////////////////////////////////
 
