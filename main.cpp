@@ -24,7 +24,7 @@ int main(void)
     std::vector<std::vector<float>> vect2D = 
     {
         {7, 5, 9},
-        {4, 16, 78},
+        {4, 200, 78},
         {84, 99, 1}
     };
 

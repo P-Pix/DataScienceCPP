@@ -41,16 +41,25 @@ std::vector<std::vector<float>> Numcpp::sort2D(void)
         clone = m_list2D;
         for(int i = 0; i < m_list2D.size(); i ++)
         {
-            for(int j = 0; j < m_list2D[i].size(); j ++)
+            for(int j = 0; j < m_list2D[i].size() - 1; j ++)
             {
-                if(m_list2D[i][j] > clone[i + (j / m_list2D[i].size())][(j + 1) % m_list2D[i].size()])
+                if((j + 1) % m_list2D[i].size() == 0 && i + 1 != m_list2D.size())
                 {
-                    //correctlyorganize = false;
-                    clone[i][j] = m_list2D[i + (j / m_list2D[i].size())][(j + 1) % m_list2D[i].size()];
-                    clone[i + (j / m_list2D[i].size())][(j + 1) % m_list2D[i].size()] = m_list2D[i][j];
+                    if(m_list2D[i][j] > clone[i + 1][0])
+                    {
+                        correctlyorganize = false;
+                        clone[i][j] = m_list2D[i + 1][0];
+                        clone[i + 1][0] = m_list2D[i][j];
+                    }
                 }
+                else if(m_list2D[i][j] > clone[i][j + 1])
+                {
+                    correctlyorganize = false;
+                    clone[i][j] = m_list2D[i][j + 1];
+                    clone[i][j + 1] = m_list2D[i][j];
+                }
+                m_list2D = clone;
             }
-            m_list2D = clone;
         }
     }
     return m_list2D;
