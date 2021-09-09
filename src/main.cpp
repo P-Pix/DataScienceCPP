@@ -9,9 +9,13 @@
  * 
  */
 
-#include "include/Numcpp.hpp"
-#include "include/Pltcpp.hpp"
-#include "include/ImageInfo.hpp"
+#include "../include/Numcpp.hpp"
+#include "../include/Pltcpp.hpp"
+#include "../include/ImageInfo.hpp"
+
+#include "../include/Maths.hpp"
+
+#include <typeinfo>
 
 //using namespace std;
 
@@ -52,5 +56,6 @@ int main(void)
         Window.pollEvent();
         Window.updateScreen();
     }
+    std::cout << exp(-3) << std::endl;
     return EXIT_SUCCESS;
 }

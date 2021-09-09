@@ -41,9 +41,9 @@ std::vector<std::vector<float>> Numcpp::sort2D(void)
         clone = m_list2D;
         for(int i = 0; i < m_list2D.size(); i ++)
         {
-            for(int j = 0; j < m_list2D[i].size() - 1; j ++)
+            for(int j = 0; j < m_list2D[i].size(); j ++)
             {
-                if((j + 1) % m_list2D[i].size() == 0 && i + 1 != m_list2D.size())
+                if((j + 1) == m_list2D[i].size() && (i + 1) < m_list2D.size())
                 {
                     if(m_list2D[i][j] > clone[i + 1][0])
                     {
@@ -63,4 +63,9 @@ std::vector<std::vector<float>> Numcpp::sort2D(void)
         }
     }
     return m_list2D;
+}
+
+std::vector<std::vector<std::vector<float>>> Numcpp::sort3D(void)
+{
+    return m_list3D;
 }

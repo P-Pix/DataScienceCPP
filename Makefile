@@ -2,7 +2,7 @@ MODULE	=	-lsfml-window\
 			-lsfml-system\
 			-lsfml-graphics\
 
-SRC		=	main.cpp\
+SRC		=	src/main.cpp\
 			\
 			src/GradientDescent/Accessor.cpp\
 			src/GradientDescent/Constructor.cpp\
@@ -12,6 +12,8 @@ SRC		=	main.cpp\
 			src/ImageInfo/Color.cpp\
 			src/ImageInfo/Constructor.cpp\
 			src/ImageInfo/Size.cpp\
+			\
+			src/Maths/Exp.cpp\
 			\
 			src/Numcpp/Accessor.cpp\
 			src/Numcpp/Constructor.cpp\
