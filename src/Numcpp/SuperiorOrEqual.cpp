@@ -51,7 +51,7 @@ std::vector<std::vector<std::vector<bool>>> Numcpp::isSuperiorOrEqual(std::vecto
     return vect;
 }
 
-////////////////////////////////////////
+
 
 std::vector<bool> Numcpp::isSuperiorOrEqual(std::vector<float> list)
 {

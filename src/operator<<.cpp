@@ -13,7 +13,7 @@
 #include "../include/Pltcpp.hpp"
 #include "../include/GradientDescent.hpp"
 
-/// Print 1D list floatant
+/// Print 1D list float
 std::ostream &operator<<(std::ostream &flux, std::vector<float> list)
 {
     flux << "[";
@@ -25,7 +25,7 @@ std::ostream &operator<<(std::ostream &flux, std::vector<float> list)
     return flux;
 }
 
-/// Print 2D list floatant
+/// Print 2D list float
 std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<float>> list)
 {
     for(int y = 0; y < list.size(); y ++)
@@ -35,7 +35,7 @@ std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<float>> lis
     return flux;
 }
 
-/// Print 3D list floatant
+/// Print 3D list float
 std::ostream &operator<<(std::ostream &flux, std::vector<std::vector<std::vector<float>>> list)
 {
     for(int z = 0; z < list.size(); z ++)

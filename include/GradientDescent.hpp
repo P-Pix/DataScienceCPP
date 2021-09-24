@@ -19,7 +19,7 @@
 class GradientDescent
 {
     private:
-        ////////////////////////////////////////
+
 
         /// 
         bool    m_running = true;
@@ -38,7 +38,7 @@ class GradientDescent
         /// Number of execution
         int     m_couter = 0;
         
-        ////////////////////////////////////////
+
 
         /// Neuron axx + bx + c
         float function(float a, float b, float c, int x);
@@ -53,7 +53,7 @@ class GradientDescent
         void tangeante(void);
 
     protected:
-        ////////////////////////////////////////
+
 
         /// Struct to create a point in the graphic
         /// \param x value for abscissa
@@ -68,7 +68,7 @@ class GradientDescent
         std::vector<Coord2D>    m_VectorCoord2D;
 
     public:
-        ////////////////////////////////////////
+
 
         /// Default constructor
         GradientDescent(void);
@@ -76,19 +76,19 @@ class GradientDescent
         /// Destructor
         ~GradientDescent(void);
 
-        ////////////////////////////////////////
+
 
         /// \return True if the gradient descent is ended, False if not
         bool isRunning(void);
 
-        ////////////////////////////////////////
+
         
         /// Transform two value x and y to Coord and put it in the Vector Coord2D
         /// \param x abscissa value
         /// \param y ordered value
         void addCoord2D(float x, float y);
 
-        ////////////////////////////////////////
+
 
         /// One gradient descent part
         void execution(void);

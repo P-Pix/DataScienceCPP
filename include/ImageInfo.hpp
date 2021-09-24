@@ -20,7 +20,7 @@
 class ImageInfo
 {
     private:
-        ////////////////////////////////////////
+
 
         /// Image adress
         const char *m_nameimage = "";
@@ -33,7 +33,7 @@ class ImageInfo
 
         sf::Image m_Image;
 
-        ////////////////////////////////////////
+
 
         /// Vector Red color
         std::vector<std::vector<float>> m_Red;
@@ -47,7 +47,7 @@ class ImageInfo
         /// Vector Red Green Blue colors
         std::vector<std::vector<std::vector<float>>> m_RGB;
 
-        ////////////////////////////////////////
+
 
         /// Calcul image size
         void imageSize(void);
@@ -67,7 +67,7 @@ class ImageInfo
     protected:
 
     public:
-        ////////////////////////////////////////
+
 
         /// Default constructor
         ImageInfo(void);
@@ -79,7 +79,7 @@ class ImageInfo
         /// Destructor
         ~ImageInfo(void);
 
-        ////////////////////////////////////////
+
 
         /// \return Vector Red color
         std::vector<std::vector<float>> getRed(void) const;
@@ -93,12 +93,12 @@ class ImageInfo
         /// \return Vector Red Green Blue colors
         std::vector<std::vector<std::vector<float>>> getRGB(void) const;
 
-        ////////////////////////////////////////
+
 
         /// \return Image Adress
         const char *getAdress(void) const;
 
-        ////////////////////////////////////////
+
 
         /// \return Image width
         unsigned int getWidth(void) const;
@@ -106,7 +106,7 @@ class ImageInfo
         /// \return Image height
         unsigned int getHeight(void) const;
 
-        ////////////////////////////////////////
+
 
         /// Give a new image to analyse
         /// \param name image adress

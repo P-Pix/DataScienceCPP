@@ -51,7 +51,7 @@ std::vector<std::vector<std::vector<bool>>> Numcpp::isEqual(std::vector<std::vec
     return vect;
 }
 
-////////////////////////////////////////
+
 
 std::vector<bool> Numcpp::isEqual(std::vector<float> list)
 {

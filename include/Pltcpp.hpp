@@ -20,7 +20,7 @@
 class Pltcpp : public GradientDescent
 {
     private:
-        ////////////////////////////////////////
+
 
         /// Dimension window width
         unsigned int    m_width = 400;
@@ -34,7 +34,7 @@ class Pltcpp : public GradientDescent
                         m_endx = 0,
                         m_endy = 0;
 
-        ////////////////////////////////////////
+
 
         /// Render Window to draw        
         sf::RenderWindow    *m_Window;
@@ -45,7 +45,7 @@ class Pltcpp : public GradientDescent
         /// Window event
         sf::Event   m_Event;
 
-        ////////////////////////////////////////
+
 
         /// abscissa
         sf::RectangleShape  m_liney;
@@ -53,12 +53,12 @@ class Pltcpp : public GradientDescent
         /// ordered
         sf::RectangleShape  m_linex;
 
-        ////////////////////////////////////////
+
 
         /// Draw abscissa and ordered
         void makeLine(void);
         
-        ////////////////////////////////////////
+
 
         /// Update screen with points and abscissa and ordered
         void allDrawing(void);
@@ -66,7 +66,7 @@ class Pltcpp : public GradientDescent
         /// add in the draw list the abscissa an ordered and the 
         void drawGraphicScale(void);
 
-        ////////////////////////////////////////
+
 
         /// add in the draw list a sprite
         void drawSprite(sf::Sprite sprite);
@@ -80,7 +80,7 @@ class Pltcpp : public GradientDescent
         /// add in the draw list a circle
         void drawPoint(sf::CircleShape point);
         
-        ////////////////////////////////////////
+
 
         /// Transform all Coord2D in circle for drawing
         void drawAllCoord2D(void);
@@ -88,7 +88,7 @@ class Pltcpp : public GradientDescent
     protected:
 
     public:
-        ////////////////////////////////////////
+
 
         /// Default constructor 
         /// Default name : Window
@@ -101,7 +101,7 @@ class Pltcpp : public GradientDescent
         /// Destructor
         ~Pltcpp(void);
         
-        ////////////////////////////////////////
+
 
         /// Test if the window is open
         /// \return True if the window is open False if not
@@ -110,7 +110,7 @@ class Pltcpp : public GradientDescent
         /// \return list Coord2D
         std::vector<GradientDescent::Coord2D> getListCoord2D(void) const;
         
-        ////////////////////////////////////////
+
 
         /// Connect keybord and the cross to function
         void pollEvent(void);

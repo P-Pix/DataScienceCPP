@@ -48,7 +48,7 @@ std::vector<std::vector<std::vector<float>>> Numcpp::sum(std::vector<std::vector
     return list1;
 }
 
-////////////////////////////////////////
+
 
 void Numcpp::sum(std::vector<float> list)
 {

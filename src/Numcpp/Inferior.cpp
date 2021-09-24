@@ -51,7 +51,7 @@ std::vector<std::vector<std::vector<bool>>> Numcpp::isInferior(std::vector<std::
     return vect;
 }
 
-////////////////////////////////////////
+
 
 std::vector<bool> Numcpp::isInferior(std::vector<float> list)
 {
